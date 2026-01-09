@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+
+  <!-- 1. Welcome -->
+  <section class="screen active" id="welcome">
+    <h1>Hello !</h1>
+    <p>welcome</p>
+
+    <button class="primary" onclick="goNext()">Continue</button>
+  </section>
+
+  <!-- 2. Calendar -->
+  <section class="screen active" id="calendar">
+    <h2>Your Personal Tracker !</h2> 
+    <input type="date" id="datePicker" />
+    <button class="primary">Save</button>
+    <div class="card">
+      <p>Calendar UI (static)</p>
+    </div>
+
+    <button class="primary">Next</button>
+  </section>
+
+  <!-- 3. Question 1 -->
+  <section class="screen active" id="q1">
+    <h2>Quick Quiz Recommendation </h2>
+    <h2>What matters most to you when choosing a period product?</h2>
+
+   <button data-rec="budget pads" class="option">Low cost</button>
+    <button data-rec="menstrual cup" class="option">Quality</button>
+    <button data-rec="pads"class="option">Availability</button>
+
+  </section>
+    
+
+ 
+
+  <!-- 4. Question 2 -->
+  <section class="screen active" id="q2">
+    <h2>What matters most when choosing a personal safety device?</h2>
+
+   <button data-rec="personal alarm or whistle"class="option">Loud Alarm</button>
+    <button data-rec="wearable devices" class="option">Portability</button>
+    <button data-rec="pepper spray or smart safety features" class="option">Multi-Function</button>
+  </section>
+  
+  <!-- 5. Question 3 -->
+  <section class="screen active" id="q2">
+    <h2>What matters most when traveling alone at night?</h2>
+
+   <button data-rec="map apps ,route safety" class="option">Well-lit Groups</button>
+    <button data-rec="ride sharing with friends" class="option">Travel in Groups</button>
+    <button data-rec="apps with SOS button" class="option">Quick-Response</button>
+  </section>
+  
+  <!--6. safety guide-->
+   <section class="screen active" id="q2">
+    <h2>Safety and Self-Care Guide </h2>
+     <p> Tap to see suggestions</p>
+     <details class="qa-box">
+  <summary class="question">
+    Travel / Commuting Safety
+
+  </summary>
+
+  <div class="answer">
+    Knowing safe routes → map safety apps.
+
+    <br>Having emergency contacts → add SOS numbers.</br>
+
+       Quick access to a safety device → alarms or wearable safety devices.
+  </div>
+</details>
+     
+      <details class="qa-box">
+  <summary class="question">
+   Home Safety
+  </summary>
+
+  <div class="answer">
+    Secure locks → recommends lock upgrade tips
+
+Smart lighting → motion sensor lights
+
+Emergency contacts → quick-access phone numbers
+  </div>
+</details>
+     
+      <details class="qa-box">
+  <summary class="question">
+    Hydration / Daily Health
+  </summary>
+
+  <div class="answer">
+    Drinking enough water → hydration reminders, water tracking
+
+Eating balanced meals → nutrition tips
+
+Exercise / fitness → short home workouts
+  </div>
+</details>
+  
+   <details class="qa-box">
+  <summary class="question">
+    Stress / Mental Health
+  </summary>
+
+  <div class="answer">
+    Meditation → attend guided meditation sessions
+
+Journaling → write daily journal prompts
+
+Listening to music → listen to relaxing playlists
+  </div>
+</details>
+  
+   <details class="qa-box">
+  <summary class="question">
+    Sleep / Rest
+  </summary>
+
+  <div class="answer">
+    Regular sleep schedule → set bedtime reminders
+
+Comfortable environment → sleep-friendly habits
+
+Reducing screen time → app timer or digital detox tips
+  </div>
+</details>
+  <button class="primary">Continue</button>
+  </section>
+
+
+  <!-- 5. Alert -->
+  <section class="screen active" id="alert">
+    <h2>Cat Call</h2>
+<img
+ src="https://cdn.discordapp.com/attachments/1452507196423405600/1454625142176223293/600307713_1394892388684118_1243311429427111017_n.png?ex=6953163b&is=6951c4bb&hm=1e48af2a2814d2bce444b3e1c6705a5c4ffa0876c1bf38ee9aef88b0b72d0d47&"" 
+
+  alt="Cat Alarm"
+  class="cat-alarm"
+/>
+ <p>Press the cat to trigger alert</p>
+</section>
+
+
+<section class="screen active" id="contacts">
+    <h2><em> In Case of an Emergency call on click here to call<em> </h2> 
+     <a href="tel:911" class="call-btn">911
+      </a>
+      <div class="app">
+  <!-- section 1 -->
+        <div class="section "><h2>📞 WOMEN & PERSONAL SAFETY HOTLINES </h2>
+          <h3>Domestic Violence</h3>
+
+National Domestic Violence Hotline (USA)
+          <a href="tel:1-800-799-SAFE" class="call=btn"<br> 📱1-800-799-SAFE (7233)</br></a>
+
+        <h3>Assaulted Women’s Helpline</h3>
+      <a href="tel:1-866-863-0511" class="call=btn"><br>   📱 1-866-863-0511</a>
+
+      <h3> Sexual Assault / Harassment </h3>
+ (USA)
+      <a href="tel:1-800-656-HOPE" class="call=btn"><br>📱 1-800-656-HOPE (4673)</br></a>
+
+      <h3> Mental Health Crisis </h3>
+988 Suicide & Crisis Lifeline (USA)
+      <a href="tel:988" class="call=btn" > <br>📱 Dial 988</br></a>
+
+      <h3>ADD YOUR LOCAL SAFETY CONTACTS</h3>
+  <div class="contact-section">
+
+  Local police station:- <input type="text" placeholder="Phone Number" id="name"><button onclick="addContact()">Add Contact</button>
+ <br> Nearest Clinic:- <input type="tel" placeholder="Phone Number" id="phone"><button onclick="addContact()">Add Contact</button>
+<br>Nearest hospital:- <input type="tel" placeholder="Phone Number" id="phone">
+
+  <button onclick="addContact()">Add Contact</button>
+
+  <div id="contactList"></div>
+</div>
+
+<h3>👩‍👩‍👧 PERSONAL TRUSTED CONTACTS</h3>
+
+<br>Mother / Father</br>
+<input type="text" placeholder="Phone Number" id="name">
+<button onclick="addContact()">Add Contact</button>
+<input type="text" placeholder="Phone Number" id="name">
+<button onclick="addContact()">Add Contact</button>
+<br>Close friend</br>
+<input type="text" placeholder="Phone Number" id="name">
+<button onclick="addContact()">Add Contact</button>
+<input type="text" placeholder="Phone Number" id="name">
+<button onclick="addContact()">Add Contact</button>
+<br> Roommate</br>
+<input type="text" placeholder="Phone Number" id="name">
+<button onclick="addContact()">Add Contact</button>
+
+<br>Guardian</br>
+<input type="text" placeholder="Phone Number" id="name">
+<button onclick="addContact()">Add Contact</button>
+        </div>
+
+</div>
+
+  </section>
+
+<section class="screen active" id="location"> 
+  <h2> Share Your Real Time Location with your Trusted Contacts<h2>
+   <button onclick="sendLocation()" class="location-btn">
+  📍 Send My Location
+</button>
+
+</section>
+ <script src="script.js"></script>
+</body>
+</html>
+
