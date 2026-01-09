@@ -42,6 +42,7 @@ Project Status :-
 
 This project is a prototype developed during a hackathon.
 Some features, including the calendar view, alarm functionality, and live location sharing, are currently under development and represented conceptually in the prototype.
+Note: The demo video showcases a more polished UI version created during the hackathon. The current repository reflects the CodePen-based frontend prototype, which may differ slightly in visuals.
 
 Demo Video
 YouTube Demo: https://youtu.be/h_W7Ho37218
