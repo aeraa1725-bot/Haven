@@ -50,6 +50,9 @@ Team & Credits 🤍
 This project was built as part of a team hackathon.
 
 Hilary (Canada): Designed the UI/UX prototype in Figma and prepared the demo presentation and theory/submission content.
+
 Megan Miao (Canada): Created the demo video showcasing the app in a mobile-style experience. Contributed to ideation and feature planning.
+
 Anushka: Developed the frontend using HTML and CSS, contributed to ideation and feature planning, and implemented the basic JavaScript functionality at the final stage of hackathon.
+
 A fourth team member was unable to participate during the final stage of the hackathon.
